@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Translation App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="container">
+        <h1><u>Translator</u> </h1>
         <div id="input">
+            <label for="inp_lang">Input Language:</label>
             <select name="inp_lang" id="inp_lang">
                 <option value="en">English</option>
+                <option value="es">Spanish</option>
                 <option value="hi">Hindi</option>
+                <option value="fr">French</option>
+                <!-- Add more languages here -->
             </select>
             <button onclick="Translate()">Translate</button>
-            <textarea name="input-text" id="input-text"></textarea>
+            <textarea name="input-text" id="input-text" placeholder="Type your sentence here..."></textarea>
+            
         </div>
 
-        <div id="output"></div>
-
+        <div id="output">
+            <label for="out_lang">Output Language:</label>
+            <select name="out_lang" id="out_lang">
+                <option value="hi">Hindi</option>
+                <option value="es">Spanish</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <!-- Add more languages here -->
+            </select>
+            <p id="output_value"></p>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
-<script src="script.js"></script>
