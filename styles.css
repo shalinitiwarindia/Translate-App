@@ -1,1 +1,37 @@
+#container{
+    display: flex;
+    border: solid 1px black;
+}
+#input,#output{
+    flex: 1;
+    margin: 5%;
+    height: 300px;
+    width: 600px;
+    border: solid 1px black;
+    background-color: whitesmoke;
+}
+#input-text{
+    width: 90%;
+    height: 250px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://assets.bizclikmedia.net/900/73139ca725673e4f907115566142da8b:481156d1ddab57a3fffda89d3395774c/404no22rkgao0fkv151020201312-jpeg.webp');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: white;
+    justify-content: center;
+    font-size: 80px;
+}
 
