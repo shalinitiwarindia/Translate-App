@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="container">
-        <h1><u>Translator</u> </h1>
-        <div id="input">
-         
-            <button onclick="Translate()">Translate</button>
-            <textarea name="input-text" id="input-text" placeholder="Type your sentence here..."></textarea>
-            
-        </div>
-
-        <d
-            </select>
-            <p id="output_value"></p>
-        </div>
+   <div id="container">
+    <h1><u>Translator</u></h1>
+    <div id="input">
+        <select name="inp_lang" id="inp_lang">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+        </select>
+        <textarea name="input-text" id="input-text" placeholder="Enter text here..."></textarea>
     </div>
-    <script src="script.js"></script>
+    <div id="output">
+        <select name="out_lang" id="out_lang">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+        </select>
+        <p id="output_value"></p>
+    </div>
+   </div> 
+  
 </body>
 </html>
+<script src="script.js"></script>
