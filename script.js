@@ -1,3 +1,5 @@
+let debounceTimeout;
+
 function read(id) {
     return document.getElementById(id).value;
 }
@@ -24,3 +26,14 @@ async function Translate() {
         document.getElementById("output_value").innerText = "Failed to translate, please try again.";
     }
 }
+
+// Debounce function
+function debounce(func, delay) {
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(func, delay);
+}
+
+// Event listener for typing in the input-text field
+document.getElementById("input-text").addEventListener("input", () => {
+    debounce(Translate, 500); // 500ms debounce delay
+});
